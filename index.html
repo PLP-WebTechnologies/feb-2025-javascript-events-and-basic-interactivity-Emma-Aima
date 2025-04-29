@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device=width, initial scale 1.0">
+        <meta charset="UTF-8">
+        <title>Week 7 Web Assignment</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Interactive Elements</h1>
+
+            <!-- Event Handling Section -->
+            <section class="section">
+                <h2>Event Handling - JavaScript</h2>
+                <p>Event handling in JavaScript refers to the process of capturing and responding 
+                   to user interactions or events, such as clicks, key presses, mouse movements, 
+                   and more. It allows developers to make web pages interactive and dynamic by 
+                   executing specific code when an event occurs.
+                </p>
+                <button id="colorButton" class="btn">Click Me!</button>
+                <div id="hoverBox" class="hover-box">Hover Over Me!</div>
+                <div id="keypressDisplay" class="keypress-display">Press any key ...</div>
+                <button id="secretButton" class="btn">Double click for surprise!</button>
+            </section>
+
+            <!-- Interactive Elements Section -->
+             <section class="section">
+                <h2>Image Gallery</h2>
+                <div class="image-gallery">
+                    <button id="prevBtn" class="gallery-btn"><</button>
+                    <img src="https://cdn.pixabay.com/photo/2019/04/25/14/43/workplace-4155023_640.jpg" 
+                    alt="Workplace Macbook Computer" class="gallery-image">
+                    <button id="nextbtn" class="gallery-btn">></button>
+
+                    <img src="https://cdn.pixabay.com/photo/2014/08/29/07/22/lens-430621_640.jpg" 
+                    alt="Lens for Photography" class="gallery-image">
+                    <button id="nextbtn" class="gallery-btn">></button>
+
+                    <img src="https://cdn.pixabay.com/photo/2014/03/25/23/04/technology-298256_640.jpg" 
+                    alt="Technology Informatics" class="gallery-image">
+                    <button id="nextbtn" class="gallery-btn">></button>
+                </div>
+
+                <!-- Accordion -->
+                 <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">Section 1</h3>
+                        <div class="accordion-content">
+                            <p>This content is being layed out for section 1. 
+                                click the header to toggle visibility.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">Section 2</h3>
+                        <div class="accordion-content">
+                            <p>This is the content for Section 2. 
+                                Click the header to toggle the visibility.
+                            </p>
+                        
+                        </div>
+                    </div>
+                 </div>
+             </section>
+
+             <!-- Form Validation Section -->
+             <section class="section">
+                <h2>Form Validation</h2>
+                <form id="validationForm" class="form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" required>
+                        <span class="validation-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" required>
+                        <span class="validation-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required>
+                        <span class="validation-message"></span>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+             </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

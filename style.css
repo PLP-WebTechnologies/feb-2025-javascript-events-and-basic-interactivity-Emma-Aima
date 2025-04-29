@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #a0c4fa;
+    color: rgb(3, 88, 88);
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.section {
+    background: rgb(229, 252, 253);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
+
+/* Event Handling Styles */
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #053466;
+    color:#a0c4fa;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0.5rem 0;
+}
+
+.bth:hover {
+    background-color: #081420;
+}
+
+.hover-box {
+    background-color: #fbfbfc;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.hover-box:hover {
+    background-color: #e9ecef;
+    transform:scale(1.02);
+}
+
+.keypress-display {
+    padding: 1rem;
+    background-color: #e2eefa;
+    margin: 1rem;
+    min-height: 3rem;
+    border-radius: 4px;
+}
+
+/* Gallery Styles */
+.gallery {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.gallery-btn {
+    padding: 0.5rem 1rem;
+    background-color: #1f3e58;
+    color: #a0c4fa;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Accordion Styles */
+.accordion {
+    margin: 1rem 0;
+}
+
+.accordion-item {
+    border: 1px solid #000;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+.ascension-content {
+    display: none;
+    padding: 1rem;
+}
+
+.ascension-content.active {
+    display: block;
+}
+
+/* Form Styles */
+.form {
+    flex-direction: column;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-group input {
+    border: 1px solid #83bef8;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.validation-message {
+    font-size: 0.875rem;
+    min-height: 1.25rem;
+    color: #dc3545
+}
+
+/* Animations */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
